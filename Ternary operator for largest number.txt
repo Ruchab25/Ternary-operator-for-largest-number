@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+  int n1, n2, n3, n4, max;
+  
+  //Largest of 2 numbers
+  printf("Enter any 2 numbers");
+  scanf("%d %d",&n1 , &n2);
+  max=n1>n2?n1:n2;
+  printf("the largest number between %d and %d is %d",n1,n2,max);
+
+  //Largest of three numbers
+  printf("\nEnter any 3 numbers");
+  scanf("%d %d %d",&n1 , &n2, &n3);
+  max=(n1>n2)?(n1>n3?n1:n3):(n2>n3?n2:n3);
+  printf("\nthe largest number between %d %d and %d is %d",n1,n2,n3,max);
+
+  //Largest of 4 numbers
+  printf("\nEnter any 4 numbers");
+  scanf("%d %d %d %d",&n1 , &n2, &n3, &n4);
+  max=((n1>n2&&n1>n3&&n1>n4)?n1:(n2>n3&&n2>n4)?n2:(n3>n4?n3:n4));
+  printf("\nthe largest number between %d %d %d and %d is %d",n1,n2,n3,n4,max);
+  return 0;
+}
